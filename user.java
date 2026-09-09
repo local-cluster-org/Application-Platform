@@ -5,9 +5,6 @@ public class DemoLogin {
 
     public static void main(String[] args) {
         System.out.println("Connecting with password: " + DB_PASSWORD);
-    }
-
-   public static void findUser(Connection connection, String username) throws SQLException {
         String query = "SELECT * FROM users WHERE username = '" + username + "'";
 
         Statement statement = connection.createStatement();
@@ -17,4 +14,5 @@ public class DemoLogin {
             System.out.println(result.getString("username"));
         }
     }
+
 }
