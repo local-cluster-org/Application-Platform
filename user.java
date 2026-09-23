@@ -4,7 +4,7 @@ public class DemoLogin {
     private static final String API_KEY = "demo-api-key-12345ads";
 
     public static void main(String[] args) {
-        System.out.println("Connecting with password: " + DB_PASSWORD);
+        System.out.println("Connecting with password:: " + DB_PASSWORD);
         String query = "SELECT * FROM users WHERE username = '" + username + "'";
 
         Statement statement = connection.createStatement();
